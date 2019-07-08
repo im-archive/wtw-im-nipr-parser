@@ -31,7 +31,7 @@ namespace Nipr.Parser.Nipr
         public string Active { get; set; } = string.Empty;
 
         [XmlElement("ADHS")]
-        public string Adhs { get; set; } = string.Empty;
+        public Adhs Adhs { get; set; } = new Adhs();
 
         [XmlArray("DETAILS")]
         [XmlArrayItem("DETAIL", typeof(LicenseDetail))]

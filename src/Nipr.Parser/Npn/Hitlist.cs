@@ -15,6 +15,11 @@ namespace Nipr.Parser.Npn
         [XmlElement("INDIVIDUAL")]
         public Individual Individual { get; set; }
 
+        public static HitList Generate(string xmlFilePath)
+        {
+            return Serializer.Deserialize<HitList>(xmlFilePath);
+        }
+
         public static HitList Generate(Individual individual)
         {
             var hitlist = HitList.GenerateEmpty();

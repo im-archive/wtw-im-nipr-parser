@@ -17,6 +17,7 @@
     <RepositoryUrl>https://github.com/WTW-IM/nipr-parser</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageProjectUrl>https://github.com/WTW-IM/nipr-parser/wiki</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/WTW-IM/nipr-parser/master/wtw-org.png</PackageIconUrl>
   </PropertyGroup>
 
   <ItemGroup>

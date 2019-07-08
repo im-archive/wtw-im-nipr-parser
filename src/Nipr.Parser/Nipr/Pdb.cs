@@ -15,6 +15,11 @@ namespace Nipr.Parser.Nipr
         [XmlElement("PRODUCER")]
         public Producer Producer { get; set; }
 
+        public static Pdb Generate(string xmlFilePath)
+        {
+            return Serializer.Deserialize<Pdb>(xmlFilePath);
+        }
+
         public static Pdb Generate(Biographic biographic)
         {
             var pdb = Pdb.GenerateEmpty();
