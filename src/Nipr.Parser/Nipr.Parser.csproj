@@ -1,11 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net452</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net452;net46;net47;net48</TargetFrameworks>
     <PackageId>Nipr.Parser</PackageId>
     <PackageVersion>$(Version)</PackageVersion>
     <Authors>Scott Offen</Authors>
-    <Description>XML Serializer for NIPR PDB responses.</Description>
+    <Owners>Scott Offen</Owners>
+    <Title>XML serializer/deserializer for NIPR responses of type HITLIST and PDB</Title>
+    <Description>The National Insurance Producer Registry provides a paid subscription service to their Producer Database (PDB). This service accepts x-www-form-urlencoded encoded requests and returns an XML document with the requested data. This .NET packages serves as both a serializer/deserializer for the two types of respones (HITLIST and PDB) as well as helper methods to read/write the files to disk and extension methods to easily retrieve and manipulate the data.</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageTags>nipr xml serializer</PackageTags>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
